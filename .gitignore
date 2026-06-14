@@ -1,0 +1,9 @@
+﻿node_modules
+dist
+.vite
+vite-*.log
+*.py
+files-mentioned-by-the-user-pdf
+new-chat
+resume_text.txt
+public/videos/
