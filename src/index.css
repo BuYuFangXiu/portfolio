@@ -1,3 +1,9 @@
+﻿/* Web font - Podium Sharp (async, doesn't block rendering) */
+@font-face {
+  font-family: 'FSP DEMO - PODIUM Sharp 4.11';
+  src: url('https://db.onlinewebfonts.com/c/8b75d9dcff6a48c35a46656192adf019?family=FSP+DEMO+-+PODIUM+Sharp+4.11');
+  font-display: swap;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
