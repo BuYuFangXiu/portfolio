@@ -73,9 +73,9 @@ body {
 /* Glass morphism card */
 .glass-card {
   background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.06);
-  animation: border-glow 4s ease-in-out infinite;
+  /* removed border-glow animation */
   transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -234,7 +234,7 @@ body {
 }
 
 /* Noise overlay */
-.noise-overlay {
+/* REMOVED .noise-overlay 
   position: fixed;
   inset: 0;
   pointer-events: none;
@@ -254,12 +254,4 @@ body {
 }
 
 
-/* Cursor glow */
-.cursor-glow {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 9998;
-  background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255,255,255,0.03), transparent 60%);
-  transition: background 0.3s ease;
-}
+
