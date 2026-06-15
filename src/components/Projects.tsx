@@ -16,6 +16,7 @@ export interface Project {
   highlights: string[]
   role: string
   timeline: string
+  bilibiliId?: string
 }
 
 const projects: Project[] = [
@@ -441,6 +442,7 @@ export default function Projects() {
     </section>
   )
 }
+
 
 
 
