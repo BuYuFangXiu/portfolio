@@ -25,7 +25,7 @@ const projects: Project[] = [
     subtitle: '开放世界动作角色扮演游戏 Demo',
     category: 'Unreal Engine 5',
     description: '使用 UE5 独立完成的开放世界动作 RPG Demo，实现了完整的 3C 系统、AI 行为树、跑酷翻越与攀爬系统、任务系统及数据持久化。从框架设计到核心功能开发、再到调试与性能优化，独立走完完整开发流程。',
-    video: 'http://tgniya1ox.hn-bkt.clouddn.com/作品1.mp4',
+    video: 'http://tgniya1ox.hn-bkt.clouddn.com/%E4%BD%9C%E5%93%811.mp4',
     details: [
       '设计角色移动组件、动画状态机、AI 行为树、任务 DataTable 配置，封装蓝图函数库配合 DrawDebugLine 可视化调试，黑板 Key 实时监控 AI 状态',
       '搭建敌人 AI 行为树：根 Selector 分支管理战斗/警戒/巡逻，视觉感知 + 听觉感知，攻击判定精度控制（仅在攻击动画特定 Notify 帧启用碰撞检测），状态智能切换',
@@ -432,6 +432,7 @@ export default function Projects() {
     </section>
   )
 }
+
 
 
 
