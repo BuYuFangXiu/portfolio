@@ -53,7 +53,7 @@ const projects: Project[] = [
     subtitle: '云端探索与氛围叙事游戏',
     category: 'Unreal Engine 5',
     description: '一款以云端岛屿为背景的氛围探索游戏。专注于环境叙事、情绪传达和沉浸感营造。从场景搭建到交互设计，从光照氛围到音效编排，独立完成从概念到可玩原型的所有开发环节。',
-    video: 'http://tgniya1ox.hn-bkt.clouddn.com/yunyu_merged.mp4',
+    video: 'https://tgniya1ox.hn-bkt.qiniucdn.com/yunyu_merged.mp4',
     details: [
       '使用 Landscape 地形系统 + 程序化材质，结合体积云、雾效与动态光照营造云端氛围',
       '探索与交互系统：角色移动、攀爬、滑翔等动作系统，配合富有节奏的交互反馈（拾取、触发、环境反应）',
@@ -432,6 +432,7 @@ export default function Projects() {
     </section>
   )
 }
+
 
 
 
