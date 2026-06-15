@@ -25,7 +25,7 @@ const projects: Project[] = [
     subtitle: '开放世界动作角色扮演游戏 Demo',
     category: 'Unreal Engine 5',
     description: '使用 UE5 独立完成的开放世界动作 RPG Demo，实现了完整的 3C 系统、AI 行为树、跑酷翻越与攀爬系统、任务系统及数据持久化。从框架设计到核心功能开发、再到调试与性能优化，独立走完完整开发流程。',
-    video: '/portfolio/videos/ac_rpg_demo.mp4',
+    video: 'http://tgniya1ox.hn-bkt.clouddn.com/作品1.mp4',
     details: [
       '设计角色移动组件、动画状态机、AI 行为树、任务 DataTable 配置，封装蓝图函数库配合 DrawDebugLine 可视化调试，黑板 Key 实时监控 AI 状态',
       '搭建敌人 AI 行为树：根 Selector 分支管理战斗/警戒/巡逻，视觉感知 + 听觉感知，攻击判定精度控制（仅在攻击动画特定 Notify 帧启用碰撞检测），状态智能切换',
@@ -53,7 +53,7 @@ const projects: Project[] = [
     subtitle: '云端探索与氛围叙事游戏',
     category: 'Unreal Engine 5',
     description: '一款以云端岛屿为背景的氛围探索游戏。专注于环境叙事、情绪传达和沉浸感营造。从场景搭建到交互设计，从光照氛围到音效编排，独立完成从概念到可玩原型的所有开发环节。',
-    video: '/portfolio/videos/yunyu_demo.mp4',
+    video: 'http://tgniya1ox.hn-bkt.clouddn.com/yunyu_merged.mp4',
     details: [
       '使用 Landscape 地形系统 + 程序化材质，结合体积云、雾效与动态光照营造云端氛围',
       '探索与交互系统：角色移动、攀爬、滑翔等动作系统，配合富有节奏的交互反馈（拾取、触发、环境反应）',
@@ -432,6 +432,7 @@ export default function Projects() {
     </section>
   )
 }
+
 
 
 
