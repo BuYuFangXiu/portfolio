@@ -24,7 +24,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - run: rm -rf node_modules/.vite
       - run: npm cache clean --force
+      - run: rm -rf node_modules/.vite
       - run: npm ci
       - run: npm run build
       - uses: actions/configure-pages@v4
@@ -33,4 +35,6 @@ jobs:
           path: dist
       - id: deployment
         uses: actions/deploy-pages@v4
+
+
 
