@@ -219,18 +219,27 @@ function ProjectModal({ project, projects, onClose, onNavigate }: { project: Pro
             </h2>
             <p className="text-white/50 text-sm sm:text-base font-inter mb-2">{project.subtitle}</p>
             <p className="text-white/40 text-xs font-inter mb-8">{project.role}</p>
-            {project.video && (
-              <div className="relative w-full rounded-xl overflow-hidden mb-8 bg-black/80 border border-white/5">
-                <video
-                  ref={videoRef}
-                  src={project.video}
-                  controls
-                  playsInline
-                  preload="metadata"
-                  className="w-full aspect-video object-cover"
-                  onPlay={() => setIsPlaying(true)}
-                  onPause={() => setIsPlaying(false)}
-                />
+            {(project.video || project.bilibiliId) && (
+              <div className="relative w-full aspect-video rounded-xl overflow-hidden mb-8 bg-black/80 border border-white/5">
+                {project.bilibiliId ? (
+                  <iframe
+                    src={"https://player.bilibili.com/player.html?bvid=" + project.bilibiliId + "&autoplay=0&danmaku=0&high_quality=1"}
+                    className="w-full h-full"
+                    allowFullScreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  />
+                ) : (
+                  <video
+                    ref={videoRef}
+                    src={project.video}
+                    controls
+                    playsInline
+                    preload="none"
+                    className="w-full aspect-video object-cover"
+                    onPlay={() => setIsPlaying(true)}
+                    onPause={() => setIsPlaying(false)}
+                  />
+                )}
                 <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
               </div>
             )}
@@ -432,4 +441,5 @@ export default function Projects() {
     </section>
   )
 }
+
 
